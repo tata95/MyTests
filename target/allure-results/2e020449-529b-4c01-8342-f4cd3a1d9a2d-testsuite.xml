@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1464661843811" stop="1464661861791" version="1.4.15" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Проверка конвертации валюты</name>
+    <title>Проверка конвертации валюты</title>
+    <test-cases>
+        <test-case start="1464661843908" stop="1464661843915" status="passed">
+            <name>* Открыть страницу 'Конвертер валют'</name>
+            <title>* Открыть страницу 'Конвертер валют'</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Tanya"/>
+                <label name="thread" value="5352@Tanya.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1464661844620" stop="1464661844620" status="passed">
+            <name>* Проверка текущей даты</name>
+            <title>* Проверка текущей даты</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Tanya"/>
+                <label name="thread" value="5352@Tanya.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1464661846069" stop="1464661846070" status="passed">
+            <name>* Проверка наличия компонентов в блоке 'Конвертер валют'</name>
+            <title>* Проверка наличия компонентов в блоке 'Конвертер валют'</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Tanya"/>
+                <label name="thread" value="5352@Tanya.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1464661853326" stop="1464661853327" status="passed">
+            <name>* Установить значения: Поменять - RUB; На - EUR</name>
+            <title>* Установить значения: Поменять - RUB; На - EUR</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Tanya"/>
+                <label name="thread" value="5352@Tanya.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1464661853466" stop="1464661853467" status="passed">
+            <name>* Проверка рассчитанного значения с параметрами: Поменять - RUB; На - EUR</name>
+            <title>* Проверка рассчитанного значения с параметрами: Поменять - RUB; На - EUR</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Tanya"/>
+                <label name="thread" value="5352@Tanya.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1464661856964" stop="1464661856964" status="passed">
+            <name>* Установить значения: Поменять - USD; На - EUR</name>
+            <title>* Установить значения: Поменять - USD; На - EUR</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Tanya"/>
+                <label name="thread" value="5352@Tanya.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1464661857125" stop="1464661857198" status="failed">
+            <name>* Проверка рассчитанного значения с параметрами: Поменять - USD; На - EUR</name>
+            <title>* Проверка рассчитанного значения с параметрами: Поменять - USD; На - EUR</title>
+            <failure>
+                <message>ComparisonFailure: expected:&lt;8347.0[5]&gt; but was:&lt;8347.0[6]&gt;</message>
+                <stack-trace>org.junit.ComparisonFailure: expected:&lt;8347.0[5]&gt; but was:&lt;8347.0[6]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at pages.СurrencyСonversionPage.calculateValue(СurrencyСonversionPage.java:94)
+	at pages.СurrencyСonversionPage.calculateValueUsdEur(СurrencyСonversionPage.java:153)
+	at stepDefinitions.CommonStepDefinitionsTest2.calculateValueUsdEur(CommonStepDefinitionsTest2.java:102)
+	at ✽.* Проверка рассчитанного значения с параметрами: Поменять - USD; На - EUR(Test1.feature:27)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Tanya"/>
+                <label name="thread" value="5352@Tanya.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1464661857219" stop="1464661857221" status="pending">
+            <name>* Установить значения: Поменять - USD; На - USD</name>
+            <title>* Установить значения: Поменять - USD; На - USD</title>
+            <failure>
+                <message>Test ignored (without reason)!</message>
+                <stack-trace>There are no stack trace</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Tanya"/>
+                <label name="thread" value="5352@Tanya.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1464661857223" stop="1464661857223" status="pending">
+            <name>* Рассчитать значения для параметров: Поменять - USD; На - USD</name>
+            <title>* Рассчитать значения для параметров: Поменять - USD; На - USD</title>
+            <failure>
+                <message>Test ignored (without reason)!</message>
+                <stack-trace>There are no stack trace</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Tanya"/>
+                <label name="thread" value="5352@Tanya.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="story" value="Проверка конвертации валюты"/>
+        <label name="feature" value="Тестовые задания стажерам"/>
+        <label name="framework" value="CucumberJVM"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

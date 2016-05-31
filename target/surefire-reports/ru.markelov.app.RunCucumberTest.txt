@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: ru.markelov.app.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 127.946 sec <<< FAILURE! - in ru.markelov.app.RunCucumberTest
+* Проверка рассчитанного значения с параметрами: Поменять - USD; На - EUR(Scenario: Проверка конвертации валюты)  Time elapsed: 0.052 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<8347.0[5]> but was:<8347.0[6]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at pages.СurrencyСonversionPage.calculateValue(СurrencyСonversionPage.java:94)
+	at pages.СurrencyСonversionPage.calculateValueUsdEur(СurrencyСonversionPage.java:153)
+	at stepDefinitions.CommonStepDefinitionsTest2.calculateValueUsdEur(CommonStepDefinitionsTest2.java:102)
+	at ✽.* Проверка рассчитанного значения с параметрами: Поменять - USD; На - EUR(Test1.feature:27)
+
+Scenario: Проверка конвертации валюты  Time elapsed: 0.068 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<8347.0[5]> but was:<8347.0[6]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at pages.СurrencyСonversionPage.calculateValue(СurrencyСonversionPage.java:94)
+	at pages.СurrencyСonversionPage.calculateValueUsdEur(СurrencyСonversionPage.java:153)
+	at stepDefinitions.CommonStepDefinitionsTest2.calculateValueUsdEur(CommonStepDefinitionsTest2.java:102)
+	at ✽.* Проверка рассчитанного значения с параметрами: Поменять - USD; На - EUR(Test1.feature:27)
+
